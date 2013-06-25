@@ -16,6 +16,7 @@ public abstract class NonRotationShip {
     }
 
     public abstract void update();
+    public abstract void update(Action a);
     public abstract void draw(Graphics2D g);
 
     public void hit() {

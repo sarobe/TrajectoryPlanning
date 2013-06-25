@@ -57,7 +57,7 @@ public class Ship extends NonRotationShip {
         update(action);
     }
 
-    public Ship update(Action action) {
+    public void update(Action action) {
         if (action.thrust > 0) {
             thrusting = true;
         } else {
@@ -69,7 +69,6 @@ public class Ship extends NonRotationShip {
         s.add(v);
 //        System.out.println("s = " + s + " : " + thrusting + " : " + v);
 //        System.out.println("d = " + d);
-        return this;
     }
 
     public String toString() {

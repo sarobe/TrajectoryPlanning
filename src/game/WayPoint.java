@@ -41,6 +41,11 @@ public class WayPoint extends NonRotationShip {
         //To change body of implemented methods use File | Settings | File Templates.
     }
 
+    @Override
+    public void update(Action a) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
     public int updatePoint(Vector2d p) {
         int dist = (int) (s.dist(p));
         score = Math.max((rad+step-1-dist)/step, score);
